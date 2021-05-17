@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="160dp"
             android:layout_marginEnd="16dp"
             android:text="Calculate BMI"
             android:textColor="#D3D3D3"
@@ -60,7 +60,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="192dp"
             android:layout_marginEnd="16dp"
-            android:text="Your height (cm)"
+            android:text="Your height (meter)"
             android:textColor="#D3D3D3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
             android:id="@+id/btnCalculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="448dp"
+            android:layout_marginTop="308dp"
             android:width="200dp"
             android:background="@drawable/rounded_corners"
             android:bottomLeftRadius="30dp"
@@ -101,34 +101,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="548dp"
-            android:layout_marginEnd="16dp"
-            android:text="Results"
-            android:textColor="#D3D3D3"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/textView6"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="16dp"
-            android:textColor="#D3D3D3"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

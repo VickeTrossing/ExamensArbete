@@ -1,6 +1,7 @@
 package com.example.plain;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,11 +11,13 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-    }
 
+        TextView output = findViewById(R.id.textView4);
 
-    public void test(){
+        String bmi = getIntent().getStringExtra("bmi");
 
-
+        output.setText(bmi);
     }
 }
+
+
