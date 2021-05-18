@@ -65,4 +65,19 @@
                 app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="181dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginEnd="149dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="goHome"
+            android:text="Back to home"
+            android:textColor="#d3d3d3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
