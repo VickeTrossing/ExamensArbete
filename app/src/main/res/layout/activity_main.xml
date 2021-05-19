@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home_page"
+        tools:context=".MainActivity"
         android:background="#202539">
 
     <Button
@@ -31,7 +31,8 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_corners_homepage"
-            android:text="Button"
+            android:onClick="goToCal"
+            android:text="Calculate Calories"
             android:textAllCaps="false"
             android:textColor="#D3D3D3"
             android:textSize="25dp"

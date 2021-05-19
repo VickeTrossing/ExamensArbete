@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CalculateBmi.class);
         startActivity(intent);
     }
+
+    public void goToCal(View view){
+        Intent intent = new Intent(this, CalculateCal.class);
+        startActivity(intent);
+    }
 }
