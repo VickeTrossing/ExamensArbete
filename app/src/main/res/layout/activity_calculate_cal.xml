@@ -4,83 +4,83 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
         android:background="#202539"
-        >
+        android:fitsSystemWindows="true"
+        tools:context=".CalculateCal">
+
 
     <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="44dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
             android:text="Your weight (kg)"
             android:textColor="#D3D3D3"
+            app:layout_constraintBottom_toTopOf="@+id/weightInput"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
             android:id="@+id/weightInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="184dp"
+            android:layout_height="44dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="52dp"
             android:backgroundTint="#8F6FFF"
-            android:textColor="#D3D3D3"
+            android:inputType="numberDecimal"
             android:padding="10dp"
             android:textAlignment="center"
+            android:textColor="#D3D3D3"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            android:inputType="numberDecimal"
-            />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:text="Your height (cm)"
             android:textColor="#D3D3D3"
+            app:layout_constraintBottom_toTopOf="@+id/heightInput"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
             android:id="@+id/heightInput"
-            android:layout_width="0dp"
+            android:layout_width="184dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="92dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="44dp"
             android:backgroundTint="#8F6FFF"
             android:inputType="numberDecimal"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#D3D3D3"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ageInput"
+            app:layout_constraintEnd_toStartOf="@+id/weightInput"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="236dp"
+            android:layout_marginTop="152dp"
             android:layout_marginEnd="16dp"
             android:text="Your age"
             android:textColor="#D3D3D3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="176dp"
+            android:layout_marginTop="96dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#8F6FFF"
             android:inputType="numberDecimal"
@@ -106,7 +106,7 @@
             android:id="@+id/btnCalculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="316dp"
             android:width="200dp"
             android:background="@drawable/rounded_corners"
             android:bottomLeftRadius="30dp"
@@ -126,9 +126,6 @@
             android:id="@+id/constraintLayout2"
             android:layout_width="0dp"
             android:layout_height="130dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
             android:background="@drawable/background_top"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -141,9 +138,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:text="Calculate your daily calrores"
+                android:text="Calculate Daily Calories"
                 android:textColor="#D3D3D3"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
@@ -151,36 +148,33 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RadioGroup
-            android:layout_width="370dp"
-            android:layout_height="174dp"
+            android:layout_width="359dp"
+            android:layout_height="31dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="100dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ageInput"
-            app:layout_constraintVertical_bias="0.099">
+            app:layout_constraintTop_toBottomOf="@+id/ageInput">
 
         <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="309dp"
-                android:layout_height="56dp"
-                android:backgroundTint="#8F6FFF"
-                android:text="Woman"
-                android:textColor="#D3D3D3" />
-
-        <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="58dp"
-                android:backgroundTint="#8F6FFF"
+                android:id="@+id/radioButton"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#8F6FFF"
                 android:text="Man"
                 android:textColor="#D3D3D3" />
 
+        <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#8F6FFF"
+                android:text="Woman"
+                android:textColor="#D3D3D3" />
     </RadioGroup>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
