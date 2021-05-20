@@ -30,13 +30,13 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="#8F6FFF"
             android:inputType="numberDecimal"
             android:padding="10dp"
             android:textAlignment="center"
             android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
@@ -70,19 +70,6 @@
             app:layout_constraintEnd_toStartOf="@+id/weightInput"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="152dp"
-            android:layout_marginEnd="16dp"
-            android:text="Your age"
-            android:textColor="#D3D3D3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
     <EditText
             android:id="@+id/ageInput"
@@ -159,7 +146,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ageInput">
 
         <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonMan"
                 android:layout_width="239dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -168,7 +155,7 @@
                 android:textColor="#D3D3D3" />
 
         <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonWoman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -176,5 +163,51 @@
                 android:text="Woman"
                 android:textColor="#D3D3D3" />
     </RadioGroup>
+
+    <Spinner
+            android:id="@+id/activitySpinner"
+            android:layout_width="227dp"
+            android:layout_height="24dp"
+            android:textAlignment="center"
+            android:layout_marginStart="1dp"
+            android:textColor="#D3D3D3"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/rounded_corners_homepage"
+            android:buttonTint="#8F6FFF"
+            app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="Your Activity "
+            android:textColor="#D3D3D3"
+            app:layout_constraintBottom_toTopOf="@+id/activitySpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="#D3D3D3"
+            android:text="Your age"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
