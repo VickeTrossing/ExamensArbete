@@ -93,7 +93,7 @@
             android:id="@+id/btnCalculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="316dp"
+            android:layout_marginTop="312dp"
             android:width="200dp"
             android:background="@drawable/rounded_corners"
             android:bottomLeftRadius="30dp"
@@ -134,12 +134,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <RadioGroup
             android:id="@+id/radioGroup"
-            android:layout_width="359dp"
-            android:layout_height="31dp"
+            android:layout_width="295dp"
+            android:layout_height="42dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="16dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +149,7 @@
 
         <RadioButton
                 android:id="@+id/radioButtonMan"
-                android:layout_width="239dp"
+                android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:buttonTint="#8F6FFF"
@@ -165,23 +166,24 @@
                 android:textColor="#D3D3D3" />
     </RadioGroup>
 
-
     <Spinner
             android:id="@+id/activitySpinner"
-            android:layout_width="242dp"
-            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
             android:layout_marginStart="1dp"
             android:layout_marginEnd="1dp"
-            android:layout_marginBottom="92dp"
+            android:layout_marginBottom="52dp"
             android:background="@android:color/transparent"
             android:buttonTint="#8F6FFF"
+            android:gravity="center"
+            android:popupBackground="@drawable/rounded_corners_homepage"
             android:textAlignment="center"
             android:textColor="#D3D3D3"
             app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
             app:layout_constraintEnd_toEndOf="parent"
 
 
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -195,7 +197,7 @@
             android:textColor="#D3D3D3"
             app:layout_constraintBottom_toTopOf="@+id/activitySpinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -210,5 +212,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+            android:id="@+id/textView8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="178dp"
+            android:layout_marginEnd="176dp"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,7 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
 
         Spinner spinner = findViewById(R.id.activitySpinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.acticity, R.layout.my_spinner);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
     }
@@ -34,11 +34,14 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
        EditText weightInput = findViewById(R.id.weightInput);
         EditText heightInput = findViewById(R.id.heightInput);
         EditText ageInput = findViewById(R.id.ageInput);
-        RadioGroup radioGroup = findViewById(R.id.radioGroup);
         Spinner spinner = findViewById(R.id.activitySpinner);
         String spinnerActivity = spinner.getSelectedItem().toString();
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
+        int radioButtonId = radioGroup.getCheckedRadioButtonId();
+        int checkedSex;
 
-        double activityLvl;
+
+        double activityLvl = 0;
 
         switch (spinnerActivity){
             case "Select":
@@ -55,12 +58,52 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
             case "Training 4-5 days/week":
                 activityLvl = 1.55;
                 break;
-            case "Training 5-7 days/week":
+            case "Training 6-7 days/week":
                 activityLvl = 1.725;
                 break;
             case "Training 2 times/day, heavy training":
                 activityLvl = 1.9;
                 break;
+
+            default:
+                activityLvl = 0.0;
+                break;
+        }
+
+        switch(radioButtonId){
+            case R.id.radioButtonMan:
+                checkedSex = 5;
+                break;
+
+            case R.id.radioButtonWoman:
+                checkedSex = -166;
+                break;
+
+            default: checkedSex = 0; break;
+        }
+
+        if(heightInput.getText().toString().equals("")){
+            heightInput.setError("Please enter something");
+        }else if(weightInput.getText().toString().equals("")){
+            weightInput.setError("Please enter something");
+        }else if(ageInput.getText().toString().equals("")){
+            ageInput.setError("Please enter something");
+        }else{
+
+            double weight = Double.parseDouble(weightInput.getText().toString());
+            double height = Double.parseDouble(heightInput.getText().toString());
+            int age = Integer.parseInt(ageInput.getText().toString());
+            int radioId = radioGroup.getCheckedRadioButtonId();
+
+            double bmr = (9.99 * weight) + (6.25 * height) - (4.92 * age) + checkedSex * activityLvl;
+
+
+            String bmrString = Double.toString(bmr);
+
+            TextView output = findViewById(R.id.textView8);
+
+            output.setText(bmrString);
+
         }
 
 
