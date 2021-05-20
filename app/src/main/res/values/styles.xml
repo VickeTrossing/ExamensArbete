@@ -9,4 +9,8 @@
 
     </style>
 
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">#D3D3D3</item>
+    </style>
+
 </resources>
