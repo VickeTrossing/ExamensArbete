@@ -7,8 +7,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.DecimalFormat;
-
 public class CalculateBmi extends AppCompatActivity {
 
     @Override
@@ -37,11 +35,12 @@ public class CalculateBmi extends AppCompatActivity {
 
             double bmi = weight / (height * height);
 
-            DecimalFormat df = new DecimalFormat("#.##");
+            //DecimalFormat df = new DecimalFormat("#.##");
+            //df.setGroupingSize(3);
+            //double p = Double.parseDouble(df.format(bmi));
+            //df.setGroupingUsed(true);
 
-            double p = Double.parseDouble(df.format(bmi));
-
-            String bmiString = Double.toString(p);
+            String bmiString = Double.toString(bmi);
 
 
 

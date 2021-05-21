@@ -52,8 +52,8 @@
 
     <TextView
             android:id="@+id/resultsCal"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
+            android:layout_width="292dp"
+            android:layout_height="63dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"

@@ -106,6 +106,10 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
             String totalString = Double.toString(totalCal);
 
 
+           // TextView output = findViewById(R.id.textView9);
+
+            //output.setText(totalString);
+
             Intent intent = new Intent(CalculateCal.this, ResultsCal.class);
             intent.putExtra("cal", totalString);
             startActivity(intent);

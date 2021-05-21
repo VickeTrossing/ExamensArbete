@@ -11,8 +11,8 @@
 
     <ImageButton
             android:id="@+id/buttonBMI"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/rounded_corners_homepage"
@@ -41,8 +41,8 @@
 
     <ImageButton
             android:id="@+id/imageButtonCal"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
 
 
             android:layout_gravity="center"
@@ -78,8 +78,8 @@
 
     <ImageButton
             android:id="@+id/buttonActivity"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
             android:background="@drawable/rounded_corners_homepage"
@@ -134,8 +134,8 @@
 
     <ImageButton
             android:id="@+id/buttonFood"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_corners_homepage"
