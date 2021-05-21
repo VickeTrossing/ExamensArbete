@@ -1,5 +1,6 @@
 package com.example.plain;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -41,13 +42,14 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
         int checkedSex;
 
 
-        double activityLvl = 0;
+        double activityLvl;
 
         switch (spinnerActivity){
             case "Select":
                 TextView errorText = (TextView)spinner.getSelectedView();
                 errorText.setTextColor(Color.RED);
                 errorText.setText("Pick something else");
+                activityLvl = 1.2;
                 break;
             case "None to very little":
                 activityLvl = 1.2;
@@ -93,16 +95,24 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
             double weight = Double.parseDouble(weightInput.getText().toString());
             double height = Double.parseDouble(heightInput.getText().toString());
             int age = Integer.parseInt(ageInput.getText().toString());
-            int radioId = radioGroup.getCheckedRadioButtonId();
 
-            double bmr = (9.99 * weight) + (6.25 * height) - (4.92 * age) + checkedSex * activityLvl;
+            double bmr = (9.99 * weight) + (6.25 * height) - (4.92 * age) + checkedSex;
+            double totalCal = bmr * activityLvl;
+
+            //DecimalFormat formatCal = new DecimalFormat("#,##");
+
+            //double p = Double.parseDouble(formatCal.format(totalCal));
+
+            String totalString = Double.toString(totalCal);
 
 
-            String bmrString = Double.toString(bmr);
+            TextView output = findViewById(R.id.textView9);
 
-            TextView output = findViewById(R.id.textView8);
+            output.setText(totalString);
 
-            output.setText(bmrString);
+            Intent intent = new Intent(CalculateCal.this, ResultsCal.class);
+            intent.putExtra("cal", totalString);
+            startActivity(intent);
 
         }
 
