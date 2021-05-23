@@ -34,15 +34,8 @@ public class CalculateBmi extends AppCompatActivity {
             double height = Double.parseDouble(heightInput.getText().toString()) / 100;
 
             double bmi = weight / (height * height);
-
-            //DecimalFormat df = new DecimalFormat("#.##");
-            //df.setGroupingSize(3);
-            //double p = Double.parseDouble(df.format(bmi));
-            //df.setGroupingUsed(true);
-
-            String bmiString = Double.toString(bmi);
-
-
+            int bmiToInt = (int) bmi;
+            String bmiString = Integer.toString(bmiToInt);
 
             Intent intent = new Intent(CalculateBmi.this, MainActivity2.class);
             intent.putExtra("bmi", bmiString);

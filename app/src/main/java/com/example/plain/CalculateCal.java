@@ -1,5 +1,6 @@
 package com.example.plain;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
     }
 
 
+      @SuppressLint({"SetTextI18n", "NonConstantResourceId"})
       public void calculateCal(View view){
        EditText weightInput = findViewById(R.id.weightInput);
         EditText heightInput = findViewById(R.id.heightInput);
@@ -98,17 +100,8 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
 
             double bmr = (9.99 * weight) + (6.25 * height) - (4.92 * age) + checkedSex;
             double totalCal = bmr * activityLvl;
-
-            //DecimalFormat formatCal = new DecimalFormat("#,##");
-
-            //double p = Double.parseDouble(formatCal.format(totalCal));
-
-            String totalString = Double.toString(totalCal);
-
-
-           // TextView output = findViewById(R.id.textView9);
-
-            //output.setText(totalString);
+            int calToInt = (int) totalCal;
+            String totalString = Double.toString(calToInt);
 
             Intent intent = new Intent(CalculateCal.this, ResultsCal.class);
             intent.putExtra("cal", totalString);
