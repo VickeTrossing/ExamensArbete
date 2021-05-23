@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="124dp"
+            android:layout_marginTop="56dp"
             android:layout_marginEnd="16dp"
             android:text="Your weight (kg)"
             android:textColor="#D3D3D3"
@@ -75,7 +75,7 @@
             android:id="@+id/btnCalculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="124dp"
+            android:layout_marginTop="64dp"
             android:width="200dp"
             android:background="@drawable/rounded_corners"
             android:bottomLeftRadius="30dp"
@@ -92,6 +92,7 @@
             tools:ignore="OnClick" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:elevation="10dp"
             android:id="@+id/constraintLayout2"
             android:layout_width="0dp"
             android:layout_height="130dp"
@@ -115,6 +116,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+            android:id="@+id/whatIsBmi"
+            android:layout_width="123dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="false"
+            android:text="What is BMI?"
+            android:textColor="#D3D3D3"
+            android:background="@drawable/home_page_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+    <TextView
+            android:id="@+id/bmiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/whatIsBmi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#D3D3D3"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

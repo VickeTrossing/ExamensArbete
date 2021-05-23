@@ -1,8 +1,10 @@
 package com.example.plain;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,12 +21,17 @@ public class MainActivity2 extends AppCompatActivity {
         String bmi = getIntent().getStringExtra("bmi");
 
         output.setText(bmi);
+
+        InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+
     }
 
     public void goHome(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
 }
 
 

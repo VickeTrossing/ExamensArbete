@@ -4,8 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity2"
-        android:background="#202539">
+        android:background="#202539"
+        tools:context=".MainActivity2">
 
     <TextView
             android:id="@+id/textView4"
@@ -38,6 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:elevation="10dp"
             android:id="@+id/constraintLayout"
             android:layout_width="0dp"
             android:layout_height="130dp"
