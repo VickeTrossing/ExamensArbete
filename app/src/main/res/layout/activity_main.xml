@@ -12,7 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout5"
-            android:layout_width="374dp"
+            android:layout_width="364dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
@@ -41,8 +41,8 @@
         <ImageButton
                 android:id="@+id/buttonFood"
 
-                android:layout_width="155dp"
-                android:layout_height="155dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="32dp"
@@ -59,15 +59,15 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageButtonCal"
-                app:layout_constraintVertical_bias="0.158" />
+                app:layout_constraintVertical_bias="0.019" />
 
         <ImageButton
                 android:id="@+id/imageButtonCal"
 
-                android:layout_width="155dp"
-                android:layout_height="155dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="108dp"
+                android:layout_marginTop="84dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/home_page_buttons"
                 android:elevation="11dp"
@@ -114,8 +114,8 @@
         <ImageButton
                 android:id="@+id/buttonActivity"
 
-                android:layout_width="155dp"
-                android:layout_height="155dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="32dp"
@@ -132,15 +132,15 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/buttonBMI"
-                app:layout_constraintVertical_bias="0.158" />
+                app:layout_constraintVertical_bias="0.019" />
 
         <ImageButton
                 android:id="@+id/buttonBMI"
 
-                android:layout_width="155dp"
-                android:layout_height="155dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="108dp"
+                android:layout_marginTop="84dp"
                 android:background="@drawable/home_page_buttons"
                 android:elevation="11dp"
                 android:onClick="goToBMI"
@@ -181,6 +181,63 @@
                 app:layout_constraintEnd_toEndOf="@+id/buttonBMI"
                 app:layout_constraintHorizontal_bias="0.408"
                 app:layout_constraintStart_toStartOf="@+id/buttonBMI" />
+
+        <ImageButton
+                android:id="@+id/toBeA"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+
+                android:background="@drawable/home_page_buttons"
+                android:onClick="goToBMI"
+                android:padding="45dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/stopwatch"
+                android:textAllCaps="false"
+                android:textColor="#D3D3D3"
+                android:elevation="11dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonActivity"
+                app:layout_constraintVertical_bias="0.146" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:elevation="11dp"
+                android:text="Timer"
+                android:textColor="#D3D3D3"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toBeA"
+                app:layout_constraintEnd_toEndOf="@+id/toBeA"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="@+id/toBeA" />
+
+
+        <ImageButton
+                android:id="@+id/toBeAb"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/home_page_buttons"
+                android:elevation="11dp"
+                android:onClick="goToBMI"
+                android:padding="45dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/report"
+                android:textAllCaps="false"
+                android:textColor="#D3D3D3"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonFood"
+                app:layout_constraintVertical_bias="0.102" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
