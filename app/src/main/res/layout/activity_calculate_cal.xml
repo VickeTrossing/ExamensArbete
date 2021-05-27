@@ -4,214 +4,198 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#202539"
+        android:background="@drawable/color_backgroud_home"
         android:fitsSystemWindows="true"
         tools:context=".CalculateCal">
 
 
-    <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="Your height (cm)"
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/heightInput"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-            android:id="@+id/heightInput"
-            android:layout_width="156dp"
-            android:layout_height="47dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#8F6FFF"
-            android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintEnd_toStartOf="@+id/weightInput"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="Your weight (kg)"
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/weightInput"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.902"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-            android:id="@+id/weightInput"
-            android:layout_width="156dp"
-            android:layout_height="47dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#8F6FFF"
-            android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-            android:id="@+id/ageInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="96dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="#8F6FFF"
-            android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="#D3D3D3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-            android:id="@+id/btnCalculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="352dp"
-            android:width="200dp"
-            android:background="@drawable/rounded_corners"
-            android:bottomLeftRadius="30dp"
-            android:bottomRightRadius="30dp"
-            android:onClick="calculateCal"
-            android:text="Calculate"
-            android:textColor="#D3D3D3"
-            android:topLeftRadius="30dp"
-            android:topRightRadius="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/heightInput"
-            tools:ignore="OnClick" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
             android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:background="@drawable/background_top"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_main"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466">
+
+        <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="96dp"
+                android:width="200dp"
+                android:background="@drawable/rounded_corners"
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:onClick="calculateCal"
+                android:text="Calculate"
+                android:textColor="#D3D3D3"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="OnClick" />
+
+        <EditText
+                android:id="@+id/heightInput"
+                android:layout_width="156dp"
+                android:layout_height="47dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="48dp"
+                android:backgroundTint="#8F6FFF"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your height (cm)"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/heightInput"
+                app:layout_constraintEnd_toEndOf="@+id/heightInput"
+                app:layout_constraintStart_toStartOf="@+id/heightInput" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Your age"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/ageInput"
+                app:layout_constraintEnd_toEndOf="@+id/ageInput"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/ageInput" />
+
+        <EditText
+                android:id="@+id/ageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="280dp"
+                android:backgroundTint="#8F6FFF"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="156dp"
+                android:layout_height="47dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="48dp"
+                android:backgroundTint="#8F6FFF"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.925"
+                app:layout_constraintStart_toEndOf="@+id/heightInput" />
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Activity "
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/activitySpinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/activitySpinner" />
+
+        <Spinner
+                android:id="@+id/activitySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="88dp"
+                android:background="@android:color/transparent"
+                android:buttonTint="#8F6FFF"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:popupBackground="@drawable/rounded_corners_homepage"
+                android:textAlignment="center"
+
+
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="295dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                    android:id="@+id/radioButtonMan"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#8F6FFF"
+                    android:text="Man"
+                    android:textColor="#D3D3D3" />
+
+            <RadioButton
+                    android:id="@+id/radioButtonWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#8F6FFF"
+                    android:text="Woman"
+                    android:textColor="#D3D3D3" />
+        </RadioGroup>
 
         <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginEnd="16dp"
+
                 android:text="Calculate Daily Calories"
                 android:textColor="#D3D3D3"
-                android:textSize="35dp"
+                android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="295dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="16dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ageInput">
-
-        <RadioButton
-                android:id="@+id/radioButtonMan"
-                android:layout_width="195dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:buttonTint="#8F6FFF"
-                android:text="Man"
-                android:textColor="#D3D3D3" />
-
-        <RadioButton
-                android:id="@+id/radioButtonWoman"
+        <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:buttonTint="#8F6FFF"
-                android:text="Woman"
-                android:textColor="#D3D3D3" />
-    </RadioGroup>
-
-    <Spinner
-            android:id="@+id/activitySpinner"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="52dp"
-            android:background="@android:color/transparent"
-            android:buttonTint="#8F6FFF"
-            android:gravity="center"
-            android:popupBackground="@drawable/rounded_corners_homepage"
-            android:textAlignment="center"
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
-            app:layout_constraintEnd_toEndOf="parent"
-
-
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="Your Activity "
-            android:textColor="#D3D3D3"
-            app:layout_constraintBottom_toTopOf="@+id/activitySpinner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="136dp"
-            android:layout_marginEnd="16dp"
-            android:textColor="#D3D3D3"
-            android:text="Your age"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+                android:text="Your weight (kg)"
+                android:textColor="#D3D3D3"
+                app:layout_constraintBottom_toTopOf="@+id/weightInput"
+                app:layout_constraintEnd_toEndOf="@+id/weightInput"
+                app:layout_constraintStart_toStartOf="@+id/weightInput" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
