@@ -5,9 +5,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
+        android:id="@+id/home_layout"
         android:fitsSystemWindows="true"
         android:windowLayoutInDisplayCutoutMode="shortEdges"
-        android:background="@drawable/color_backgroud_home">
+        android:background="@drawable/changing_background">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
