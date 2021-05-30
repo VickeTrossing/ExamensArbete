@@ -179,12 +179,13 @@
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="52dp"
 
                 android:text="Calculate Daily Calories"
                 android:textColor="#D3D3D3"
                 android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -197,6 +198,20 @@
                 app:layout_constraintBottom_toTopOf="@+id/weightInput"
                 app:layout_constraintEnd_toEndOf="@+id/weightInput"
                 app:layout_constraintStart_toStartOf="@+id/weightInput" />
+
+        <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="52dp"
+                android:onClick="goHome"
+                android:backgroundTint="#8F6FFF"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.005"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

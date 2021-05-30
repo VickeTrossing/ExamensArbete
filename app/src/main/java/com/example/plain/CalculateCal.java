@@ -117,6 +117,11 @@ public class CalculateCal extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    public void goHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String  spinnerValue= parent.getItemAtPosition(position).toString();

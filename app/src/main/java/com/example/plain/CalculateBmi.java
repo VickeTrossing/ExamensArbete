@@ -55,7 +55,7 @@ public class CalculateBmi extends AppCompatActivity {
     }
 
 
-    public void calculateCal(View view) {
+    public void calculateBmi(View view) {
 
         EditText weightInput = findViewById(R.id.weightInput);
         EditText heightInput = findViewById(R.id.heightInput);
@@ -81,5 +81,10 @@ public class CalculateBmi extends AppCompatActivity {
             intent.putExtra("bmi", bmiString);
             startActivity(intent);
         }
+    }
+
+    public void goHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

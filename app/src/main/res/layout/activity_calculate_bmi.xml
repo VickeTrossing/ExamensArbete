@@ -108,7 +108,7 @@
                 android:background="@drawable/rounded_corners"
                 android:bottomLeftRadius="30dp"
                 android:bottomRightRadius="30dp"
-                android:onClick="calculateCal"
+                android:onClick="calculateBmi"
                 android:text="Calculate"
                 android:textColor="#D3D3D3"
                 android:topLeftRadius="30dp"
@@ -134,6 +134,18 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="52dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

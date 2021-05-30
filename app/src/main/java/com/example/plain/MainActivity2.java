@@ -11,10 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
 
+    OnCreateCode createCode = new OnCreateCode();
+    private View view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        createCode.onCreateMethod(view, this);
 
         TextView output = findViewById(R.id.textView4);
 
