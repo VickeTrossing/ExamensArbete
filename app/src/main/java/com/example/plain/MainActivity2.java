@@ -30,7 +30,24 @@ public class MainActivity2 extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
 
+        double bmiDouble = Double.parseDouble(bmi);
+        TextView bmiResults = findViewById(R.id.textView17);
+
+        if(bmiDouble < 19.0){
+            bmiResults.setText("You are underweight");
+        }else if(bmiDouble < 25.0){
+            bmiResults.setText("You are in the good zone my dude");
+        }else if(bmiDouble < 30.0){
+            bmiResults.setText("You are a bit overweight");
+        }else if(bmiDouble < 40.0){
+            bmiResults.setText("You are obese, do something about it");
+        }else if(bmiDouble >= 40.0){
+            bmiResults.setText("You gon die soon bro");
+        }
+
     }
+
+
 
     public void goHome(View view){
         Intent intent = new Intent(this, MainActivity.class);

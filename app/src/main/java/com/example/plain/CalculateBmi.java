@@ -29,7 +29,7 @@ public class CalculateBmi extends AppCompatActivity {
 
 
         whatIsBmiButton = (Button) findViewById(R.id.whatIsBmi);
-        //bmiText = (TextView) findViewById(R.id.bmiText);
+        bmiText = (TextView) findViewById(R.id.bmiText);
 
         whatIsBmiButton.setOnClickListener(new View.OnClickListener(){
             @Override

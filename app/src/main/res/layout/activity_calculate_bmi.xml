@@ -140,12 +140,23 @@
                 android:layout_width="52dp"
                 android:layout_height="37dp"
                 android:layout_marginTop="12dp"
+                android:onClick="goHome"
                 android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.018"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/abc_vector_test" />
+                app:srcCompat="@drawable/abc_vector_test"
+                tools:ignore="OnClick" />
+
+        <TextView
+                android:id="@+id/bmiText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/whatIsBmi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
